@@ -1,0 +1,16 @@
+{{!-- {{> navbar}} <!-- Include navbar partial -->
+
+<div class="container">
+    <h1>Cart Items</h1>
+    {{#if user.cart.length}}
+        <ul>
+            {{#each user.cart}}
+                <li>{{this.product.name}} - {{this.count}} items</li>
+            {{/each}}
+        </ul>
+    {{else}}
+        <p>Your cart is empty.</p>
+    {{/if}}
+
+    <a href="/cart/items" class="btn btn-primary">Go to Cart</a> <!-- Button to navigate to cart -->
+</div> --}}
